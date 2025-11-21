@@ -7,7 +7,7 @@ mobile, tablette et desktop.
 
 ---
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 
 - Page d'accueil présentant mon profil
 - Page CV avec mon parcours scolaire et professionnel

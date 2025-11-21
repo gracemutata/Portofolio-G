@@ -182,19 +182,30 @@ nav a.active {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  height: 500px;
 }
 
 /* Conteneur global : aligne 3 projets côte à côte */
-.projects-list {
+
+
+
+.card.wide.projects-list {
+  /* center the projects section and limit width for better layout */
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  justify-content: space-between;
+  gap: 24px;
+  justify-content: center; /* center project cards */
+  align-items: flex-start;
+  max-width: var(--container);
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px;
+  margin: auto;
 }
 
 /* Chaque carte projet */
-.projects-list .project {
-  flex: 1 1 calc(33.333% - 16px); /* 3 colonnes */
+.project {
+  /* make each project card responsive and centered inside the container */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,6 +215,9 @@ nav a.active {
   background: var(--card);
   padding: 16px;
   border-radius: 12px;
+ 
+  width: 320px; /* fixed card width so centering looks consistent */
+  box-sizing: border-box;
 }
 
 /* Texte du projet */
